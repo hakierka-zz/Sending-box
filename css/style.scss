@@ -3,7 +3,8 @@
 
 body {
   background-image: url("/images/greypattern.png");
-  font-family: $basicFont;
+  font-family: $regularFont;
+  font-weight: 400;
   color: $fontColor;
 }
 h1 {
@@ -12,10 +13,12 @@ h1 {
   padding: 1.5rem 0 0.7rem 0;
 }
 p {
-  font-size: 12px;
+  font-size: 15px;
   line-height: 1.2rem;
+  opacity: 0.75;
 
 }
+
 
 div.box {
 
@@ -40,19 +43,27 @@ div.box .container {
 }
 
 header {
+  ul {
+    width: auto;
+    list-style-type: none;
+    text-align: center;
 
-  h1 {
-    span {
-      font-family: 'Open Sans', sans-serif;
-      color: $spanColor;
-      font-style: italic;
+    li {
+      display: inline;
 
     }
   }
-  img {
-    height: 90px;
-    width: 283px;
+
+  h1 {
+    span {
+      font-family: $spanFont;
+      color: $spanColor;
+      font-style: italic;
+      font-weight: 800;
+
+    }
   }
+
 }
 
 footer {
@@ -63,18 +74,21 @@ footer {
     height: 5rem;
     border: 1px solid $borderColor;
     border-radius: 0.3rem;
+    opacity: 0.4;
     color: $fontColor;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "$areaFont", Arian, sans-serif;
+    font-weight: 300;
     font-style: italic;
 
   }
   input {
     width: 100%;
     height: 3rem;
-    font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 20px;
     border-radius: 0.4rem;
     background-color: $spanColor;
+    font-family: $inputFont;
+    font-weight: 600;
   }
 }
