@@ -1,6 +1,54 @@
 @import "variables";
 @import "reset";
 
-* {
+body {
   background-color: $backgroundColor;
+  font-family: 'Open Sans', sans-serif;
+  color: #808080;
+
+}
+h1 {
+  font-size: 20px;
+  line-height: 1.5rem;
+  padding: 1.5rem 0 0.7rem 0;
+}
+p {
+  font-size: 12px;
+  line-height: 1.2rem;
+
+}
+
+div.box {
+  height: 10em;
+  position: relative;
+}
+div.box .container {
+  width: auto;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: white;
+
+}
+.container {
+  padding: 0.7rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  box-shadow: 0 2px 5px #888888;
+}
+
+header {
+
+  h1 {
+    span {
+      font-family: 'Open Sans Extra-Bold 800 Italic', sans-serif;
+      color: #2159d6;
+    }
+  }
+  img {
+    height: 90px;
+    width: 283px;
+  }
 }
