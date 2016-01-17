@@ -149,4 +149,11 @@ footer form input {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 500px) {
+  div.box .container {
+    width: 100%;
+    background: white;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
