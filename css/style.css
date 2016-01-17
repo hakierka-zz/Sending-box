@@ -96,6 +96,7 @@ header div ul {
   width: auto;
   list-style-type: none;
   text-align: justify;
+  display: inline-block;
 }
 header div li {
   display: inline-block;
