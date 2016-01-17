@@ -162,6 +162,9 @@ footer form textarea {
   font-weight: 300;
   font-style: italic;
 }
+footer form textarea textarea:hover {
+  cursor: auto;
+}
 footer form .hidden-text {
   display: none;
 }

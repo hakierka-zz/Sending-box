@@ -135,6 +135,9 @@ footer {
       font-family: $regularFont;
       font-weight: 300;
       font-style: italic;
+      textarea:hover {
+        cursor: auto;
+      }
 
     }
     .hidden-text {
