@@ -103,6 +103,31 @@ header div ul {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+header div ul li {
+  opacity: 0.5;
+}
+header div ul li:hover {
+  opacity: 1;
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+header div ul li:hover, header div ul li:hover:focus, header div ul li:hover:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+header div h1 a {
+  text-decoration: none;
+}
 header div h1 span {
   font-family: "Open Sans", Arial, sans-serif;
   color: #2159d6;

@@ -6,6 +6,7 @@ $(document).ready(function() {
 
     function validateForm() {
         var inputText = $("#inputText");
+        var submit = $("#submit");
 
         inputText.on("input", function(){
 
@@ -14,12 +15,19 @@ $(document).ready(function() {
             }
             else {
                 $("#warning").removeClass("hidden-text-show").addClass("hidden-text");
+                submit.removeAttr("disabled");
+                submit.css('cursor','pointer');
             }
 
         });
 
+
     }
+
+
+
     validateForm();
+
 
 
 });
