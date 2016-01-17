@@ -163,10 +163,11 @@ footer {
       box-shadow: inset 0px -10px 36px 1px rgba(10,49,135,1);
       font-family: $regularFont;
       font-weight: 600;
+
     }
-    //input:hover {
-    //  cursor: pointer;
-    //}
+    input:hover {
+      cursor: not-allowed;
+    }
 
   }
 

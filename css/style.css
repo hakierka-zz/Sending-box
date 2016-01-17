@@ -189,5 +189,8 @@ footer form input {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 600;
 }
+footer form input:hover {
+  cursor: not-allowed;
+}
 
 /*# sourceMappingURL=style.css.map */
