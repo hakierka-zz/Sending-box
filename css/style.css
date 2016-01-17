@@ -133,6 +133,15 @@ footer form textarea {
   font-weight: 300;
   font-style: italic;
 }
+footer form .hidden-text {
+  display: none;
+}
+footer form .hidden-text-show {
+  font-size: 10px;
+  color: #808080;
+  padding: 0;
+  margin: 0;
+}
 footer form input {
   margin-top: 0.7rem;
   border: 1px solid #2159d6;
