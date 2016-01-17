@@ -4,16 +4,19 @@
 
 body {
   background-image: url("../images/greypattern.png");
-  font-family: $regularFont;
-  font-weight: 400;
+  background-color: $basicBackgroundColor;
   color: $fontColor;
 }
 h1 {
-  font-size: 18px;
+  font-family: $regularFont;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 1.5rem;
   padding: 1.5rem 0 0.7rem 0;
 }
 p {
+  font-family: $regularFont;
+  font-weight: 400;
   font-size: 15px;
   line-height: 1.2rem;
   opacity: 0.75;
@@ -25,6 +28,7 @@ div.box {
 
   height: 40rem;
   position: relative;
+
 }
 div.box .container {
   width: auto;
@@ -38,10 +42,13 @@ div.box .container {
 
 }
 .container {
+
   border-radius: 0 0 0.5rem 0.5rem;
   box-shadow: 0 2px 5px $borderColor;
 }
 
+
+//Element with images and text
 header {
   div {
     padding: 3rem 0.7rem 0 0.7rem;
@@ -49,19 +56,22 @@ header {
     ul {
       width: auto;
       list-style-type: none;
-      text-align: justify;
-      display: inline-block;
+      //text-align: justify;
+      //display: inline-block;
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
 
     }
 
     li {
-      display: inline-block;
+      //display: inline-block;
 
     }
 
     h1 {
       span {
-        font-family: $spanFont;
+        font-family: OpenSans, sans-serif;
         color: $spanColor;
         font-style: italic;
         font-weight: 800;
@@ -75,12 +85,14 @@ header {
 
 }
 
+//Element with description
 main {
   p {
     padding:  0.7rem 0.7rem 0 0.7rem;
   }
 }
 
+//Footer with form
 footer {
   hr {
     opacity: 0.1;
@@ -96,7 +108,7 @@ footer {
       border-radius: 0.3rem;
       opacity: 0.4;
       color: $fontColor;
-      font-family: "$areaFont", Arian, sans-serif;
+      font-family: $regularFont;
       font-weight: 300;
       font-style: italic;
 
@@ -122,7 +134,7 @@ footer {
       -webkit-box-shadow: inset 0px -10px 36px 1px rgba(10,49,135,1);
       -moz-box-shadow: inset 0px -10px 36px 1px rgba(10,49,135,1);
       box-shadow: inset 0px -10px 36px 1px rgba(10,49,135,1);
-      font-family: $inputFont;
+      font-family: $regularFont;
       font-weight: 600;
     }
   }
@@ -130,13 +142,14 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
-  div.box {
-  }
   div.box .container {
     width: 100%;
-    background: white;
-
+    height: 100%;
+    margin-right: 0;
+    position: inherit;
+    top: clear;
+    left: clear;
+    transform: clear;
   }
-
 
 }

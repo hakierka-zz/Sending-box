@@ -8,7 +8,7 @@ $(document).ready(function() {
     function validateForm() {
         var inputText = $("#inputText");
 
-        inputText.on("input", function(event){
+        inputText.on("input", function(){
 
             if($.isNumeric($(this).prop("value")) || $(this).prop("value").length <= 5){
                 $("#warning").removeClass("hidden-text").addClass("hidden-text-show");

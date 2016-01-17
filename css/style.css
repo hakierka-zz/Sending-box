@@ -51,18 +51,21 @@ table {
 
 body {
   background-image: url("../images/greypattern.png");
-  font-family: "OpenSan", Arial, sans-serif;
-  font-weight: 400;
+  background-color: #dddddf;
   color: #808080;
 }
 
 h1 {
-  font-size: 18px;
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 1.5rem;
   padding: 1.5rem 0 0.7rem 0;
 }
 
 p {
+  font-family: "OpenSans", Arial, sans-serif;
+  font-weight: 400;
   font-size: 15px;
   line-height: 1.2rem;
   opacity: 0.75;
@@ -95,14 +98,12 @@ header div {
 header div ul {
   width: auto;
   list-style-type: none;
-  text-align: justify;
-  display: inline-block;
-}
-header div li {
-  display: inline-block;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
 }
 header div h1 span {
-  font-family: "OpenSans", Arial, sans-serif;
+  font-family: OpenSans, sans-serif;
   color: #2159d6;
   font-style: italic;
   font-weight: 800;
@@ -130,7 +131,7 @@ footer form textarea {
   border-radius: 0.3rem;
   opacity: 0.4;
   color: #808080;
-  font-family: "$areaFont", Arian, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-weight: 300;
   font-style: italic;
 }
@@ -155,14 +156,19 @@ footer form input {
   -webkit-box-shadow: inset 0px -10px 36px 1px #0a3187;
   -moz-box-shadow: inset 0px -10px 36px 1px #0a3187;
   box-shadow: inset 0px -10px 36px 1px #0a3187;
-  font-family: "OpenSans-Semibold", Arial, sans-serif;
+  font-family: "OpenSans", Arial, sans-serif;
   font-weight: 600;
 }
 
 @media only screen and (max-width: 500px) {
   div.box .container {
     width: 100%;
-    background: white;
+    height: 100%;
+    margin-right: 0;
+    position: inherit;
+    top: clear;
+    left: clear;
+    transform: clear;
   }
 }
 
