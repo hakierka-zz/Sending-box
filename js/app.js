@@ -1,6 +1,5 @@
 $(document).ready(function() {
 
-
     /**
      * This function checks if the information makes sense
      * **/
@@ -20,7 +19,6 @@ $(document).ready(function() {
         });
 
     }
-
     validateForm();
 
 
