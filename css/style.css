@@ -50,14 +50,14 @@ table {
 }
 
 body {
-  background-image: url("/images/greypattern.png");
+  background-image: url("../images/greypattern.png");
   font-family: "OpenSan", Arial, sans-serif;
   font-weight: 400;
   color: #808080;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5rem;
   padding: 1.5rem 0 0.7rem 0;
 }
@@ -69,7 +69,7 @@ p {
 }
 
 div.box {
-  height: 50rem;
+  height: 40rem;
   position: relative;
 }
 
@@ -85,27 +85,42 @@ div.box .container {
 }
 
 .container {
-  padding: 0.7rem;
   border-radius: 0 0 0.5rem 0.5rem;
   box-shadow: 0 2px 5px #808080;
 }
 
-header ul {
+header div {
+  padding: 3rem 0.7rem 0 0.7rem;
+}
+header div ul {
   width: auto;
   list-style-type: none;
-  text-align: center;
+  text-align: justify;
 }
-header ul li {
-  display: inline;
+header div li {
+  display: inline-block;
 }
-header h1 span {
+header div h1 span {
   font-family: "OpenSans", Arial, sans-serif;
   color: #2159d6;
   font-style: italic;
   font-weight: 800;
 }
+header div hr {
+  opacity: 0.25;
+}
 
-footer textarea {
+main p {
+  padding: 0.7rem 0.7rem 0 0.7rem;
+}
+
+footer hr {
+  opacity: 0.1;
+}
+footer form {
+  padding: 0 0.7rem 0.7rem 0.7rem;
+}
+footer form textarea {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -118,13 +133,18 @@ footer textarea {
   font-weight: 300;
   font-style: italic;
 }
-footer input {
+footer form input {
+  margin-top: 0.7rem;
+  border: 1px solid #2159d6;
   width: 100%;
   height: 3rem;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 0.4rem;
-  background-color: #2159d6;
+  background-color: #517fe5;
+  -webkit-box-shadow: inset 0px -10px 36px 1px #0a3187;
+  -moz-box-shadow: inset 0px -10px 36px 1px #0a3187;
+  box-shadow: inset 0px -10px 36px 1px #0a3187;
   font-family: "OpenSans-Semibold", Arial, sans-serif;
   font-weight: 600;
 }

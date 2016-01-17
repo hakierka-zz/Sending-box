@@ -1,14 +1,16 @@
 @import "variables";
 @import "reset";
 
+
 body {
-  background-image: url("/images/greypattern.png");
+  background-image: url("../images/greypattern.png");
+
   font-family: $regularFont;
   font-weight: 400;
   color: $fontColor;
 }
 h1 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5rem;
   padding: 1.5rem 0 0.7rem 0;
 }
@@ -22,7 +24,7 @@ p {
 
 div.box {
 
-  height: 50rem;
+  height: 40rem;
   position: relative;
 }
 div.box .container {
@@ -37,58 +39,81 @@ div.box .container {
 
 }
 .container {
-  padding: 0.7rem;
   border-radius: 0 0 0.5rem 0.5rem;
   box-shadow: 0 2px 5px $borderColor;
 }
 
 header {
-  ul {
-    width: auto;
-    list-style-type: none;
-    text-align: center;
+  div {
+    padding: 3rem 0.7rem 0 0.7rem;
+
+    ul {
+      width: auto;
+      list-style-type: none;
+      text-align: justify;
+    }
 
     li {
-      display: inline;
-
+      display: inline-block;
     }
-  }
 
-  h1 {
-    span {
-      font-family: $spanFont;
-      color: $spanColor;
-      font-style: italic;
-      font-weight: 800;
+    h1 {
+      span {
+        font-family: $spanFont;
+        color: $spanColor;
+        font-style: italic;
+        font-weight: 800;
 
+      }
+    }
+    hr {
+      opacity: 0.25;
     }
   }
 
 }
 
-footer {
-  textarea {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 5rem;
-    border: 1px solid $borderColor;
-    border-radius: 0.3rem;
-    opacity: 0.4;
-    color: $fontColor;
-    font-family: "$areaFont", Arian, sans-serif;
-    font-weight: 300;
-    font-style: italic;
+main {
+  p {
+    padding:  0.7rem 0.7rem 0 0.7rem;
+  }
+}
 
+footer {
+  hr {
+    opacity: 0.1;
   }
-  input {
-    width: 100%;
-    height: 3rem;
-    color: white;
-    font-size: 20px;
-    border-radius: 0.4rem;
-    background-color: $spanColor;
-    font-family: $inputFont;
-    font-weight: 600;
+  form {
+    padding: 0 0.7rem 0.7rem 0.7rem;
+    textarea {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 5rem;
+      border: 1px solid $borderColor;
+      border-radius: 0.3rem;
+      opacity: 0.4;
+      color: $fontColor;
+      font-family: "$areaFont", Arian, sans-serif;
+      font-weight: 300;
+      font-style: italic;
+
+    }
+    input {
+      margin-top: 0.7rem;
+      border: 1px solid $spanColor;
+      width: 100%;
+      height: 3rem;
+      color: white;
+      font-size: 16px;
+      border-radius: 0.4rem;
+      background-color: #517fe5;
+      -webkit-box-shadow: inset 0px -10px 36px 1px rgba(10,49,135,1);
+      -moz-box-shadow: inset 0px -10px 36px 1px rgba(10,49,135,1);
+      box-shadow: inset 0px -10px 36px 1px rgba(10,49,135,1);
+      font-family: $inputFont;
+      font-weight: 600;
+    }
   }
+
 }
