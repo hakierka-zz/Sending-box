@@ -103,11 +103,7 @@ header div ul {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-header div ul li {
-  opacity: 0.5;
-}
 header div ul li:hover {
-  opacity: 1;
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: translateZ(0);

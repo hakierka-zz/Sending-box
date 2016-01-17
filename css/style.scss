@@ -62,11 +62,8 @@ header {
       flex-flow: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      li {
-        opacity: 0.5;
-      }
+     
       li:hover {
-        opacity: 1;
         display: inline-block;
         vertical-align: middle;
         -webkit-transform: translateZ(0);
